@@ -31,7 +31,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(User newUser)
+    public async Task<IActionResult> Create(User newUser)
     {
         await _storeService.CreateUserAsync(newUser);
 

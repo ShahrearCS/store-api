@@ -31,7 +31,7 @@ public class UsersWishListController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(UsersWishList newUser)
+    public async Task<IActionResult> Create(UsersWishList newUser)
     {
         await _storeService.CreateUserWishListAsync(newUser);
 

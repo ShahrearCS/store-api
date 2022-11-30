@@ -72,4 +72,5 @@ public class StoreService
 
     public async Task RemoveUserWishListAsync(string _id) =>
         await _usersWishListCollection.DeleteOneAsync(x => x._id == _id);
+
 }

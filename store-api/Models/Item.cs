@@ -13,4 +13,5 @@ public class Item
     public string itemCategory { get; set; } = null!;
     public string itemTags { get; set; } = null!;
     public string itemDescription { get; set; } = null!;
+    public List<User> waitList { get; set; } = null!;
 }
